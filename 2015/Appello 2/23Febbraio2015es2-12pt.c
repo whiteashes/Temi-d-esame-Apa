@@ -91,7 +91,7 @@ void printPaths(struct node *root, int h, int pos, int *path){
     if(root->left == NULL && root->right == NULL){
         path[pos] = root->key;
 
-        for(i=0; i<h;i++)
+        for(i=0; i<pos+1;i++)
             if(path[i]!=-1)
                 printf("%d ", path[i]);
         printf("\n");
