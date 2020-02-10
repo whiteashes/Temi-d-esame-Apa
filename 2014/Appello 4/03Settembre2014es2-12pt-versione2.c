@@ -46,6 +46,7 @@ node_t* splitStr(char* str){
 			pos++;
 		}
 		else {
+			tmp[pos] = '\0';
 			lista = nodo(tempStringa, lista);
 			pos = 0;
 		}
